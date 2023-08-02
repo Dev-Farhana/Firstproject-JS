@@ -1,0 +1,333 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: -apple-system,Geneva, "Segoe UI", Tahoma;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.text-vertical{
+  position: absolute;
+  transform-origin: 0% 0%;
+  left: -16%;
+  top: 38%; 
+}
+.text-vertical h1{
+  font-size: 40px;
+  letter-spacing: 6px;
+  -webkit-text-stroke: 2px;   
+  transform: rotate(90deg);
+  background: rgba( 205, 93, 228, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: fixed;
+}
+/* .page1,.page2,.page3,.page4,.page5{
+  height: 100vh;
+  width: 100%;
+} */
+
+#cakes{
+  display: inline-block;
+  background:  #ffc0cb;
+  height: 150vh;
+}
+.page1 .caketext{
+  margin-top: 10%;
+  margin-left: 33%;
+  font-size: 2vw;
+  color: #aaa;
+  position: fixed;  
+}
+.cakebtn{
+  opacity: 0.5;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+#cupcakes{
+  height: 125vh;
+  background-color: #d961ecc1;
+}
+.cup-text,.cupbtn{
+  font-family: cursive;
+  margin-top: 70px;
+  margin-left: 85px;
+  font-weight: 800 bolder;
+  font-size: 1.6rem;
+  opacity: 0.8;
+  color: #ededed;
+}
+#cupcakes .cup-text{
+  font-weight: bolder;
+  letter-spacing: 2vw;
+  font-size: 2rem;
+}
+.cupbtn {
+  background-color: #3333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cupbtn:hover {
+  background-color: #5555;
+}
+
+
+@media (max-width: 767px) {
+  .cupbtn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .moreCupcakes img {
+    width: 30%;
+  }
+}
+
+.page3{
+  height: 170vh;
+  background: url('/images/red.jpg');
+  background-size: cover;
+
+}
+
+.page3 .right{
+  /* background: url('/images/red.jpg');
+  background-size: cover; */
+  display: flex;
+ justify-content: space-between;  
+} 
+.right p{
+  flex: 1;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.right .drinkbtn{
+  height: 25vh;
+  width: 20%;
+  border-radius: 10px;
+  background: #800080;
+  margin-top: 10%;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.page5{
+  height: 80vh;
+}
+.page5 .contact,
+h3{
+  background-color: #aaa;
+  font-size: 2em;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact input{
+  margin: 10px;
+  height: 3vw;
+  width: 25%;
+  border: none;
+  padding: 8px;
+}
+.sendBtn {
+  font-size: 18px;
+  width:100px;
+  height: 40px;
+  color:#3a8a9e;
+  border-color:#d6bcd6;
+  font-weight:bold;
+  text-align: center;
+  border-radius: 15px;
+  background:linear-gradient(#ededed, #bab1ba);                
+}  
+
+.sendBtn:hover {
+  background: linear-gradient(#bab1ba, #ededed);
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+  
+.left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+  
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+  
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+  
+button:hover {
+    color: #222;
+}
+  
+button:focus {
+    outline: none;
+}
+  
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+  
+.slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 10px;
+ margin-top: 10%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffc107;
+}
+
+  
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .text-vertical {
+    left: 0;
+    top: 35%;
+   transform: rotate(0); 
+  }
+  .text-vertical h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .page1 .caketext {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 33%; 
+  }
+  .cup-text,
+  .cupbtn {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1.2rem;
+  }
+  .cupbtn {
+    width: 150px;
+  }
+  
+  .right .drinkbtn {
+    font-size: 10px;
+    height: 12vh;
+  }
+  .contact input {
+    height: 40px;
+    width: 60%;
+  }
+
+}

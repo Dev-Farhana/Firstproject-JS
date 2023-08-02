@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SweetSpot Bakehouse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="text-vertical">
+       <h1> SweetSpot Bakehouse </h1>
+      </div>
+      <div class="slider-container">
+        <div class="left-slide">
+          <div style="background-color: #FD3555">
+            <h1>Cake Cravings</h1>
+            <p>all in pink</p>
+          </div>
+          <div style="background-color: #d961ecc1">
+            <h1>Cupcakes</h1>
+            <p>with it's cravings</p>
+          </div>
+          <div style="background-color: #d64915">
+            <h1> Coffee & Drinks</h1>
+            <p>in the wilderness</p>
+          </div>
+        </div>
+        <div class="right-slide">
+          <div style="background-image: url('https://drawcartoonstyle.com/wp-content/uploads/2022/09/11-add-highlights-to-the-mug.jpg')"></div>
+          <div style="background-image: url('/images/Cupcakes/cupcake-rainbow.jpg')"></div>
+          <div style="background-image: url(/images/cakes/pinkflower.jpg)"></div>
+        </div>
+          <div class="action-buttons">
+            <button class="down-button"> <i class="fas fa-arrow-down"></i> </button>
+            <button class="up-button"> <i class="fas fa-arrow-up"></i>  </button>
+          </div>
+      </div>
+    </div>
+
+    <div class="page1" id="cakes">
+      <div class="caketext">
+        <h2>Baking with heart.</h2>
+        <h2> So Sweet. So Good. </h2>
+        <h2> Sure to bring smiles </h2>
+        <h2>The home of fresh baking. </h2>
+        <h2>Because you deserve it!</h2>
+        <button class="cakebtn"  onclick="openCakes()"> See More Cakes! </button>
+      </div>
+      <div id="visit">
+        <img src="/images/cakes/pinkycake.jpg" width="30%" height="20%">
+        <img src="/images/cakes/pinkmacron cake.jpg" style="float: right;" width="30%" height="20%">
+      </div>
+      <div id="inside" style="display: none; margin-left: 10%;">
+          <img src="/images/cakes/choco cake.jpg" width="20%" height="33%">
+          <img src="/images/cakes/cute cake.jpg" width="20%" height="20%">
+          <img src="/images/cakes/choco-white.jpg" width="20%" height="33%">
+          <img src="/images/cakes/orange cake.jpg" width="20%" height="33%">
+          <img src="/images/cakes/pinkblue cake.jpg" width="20%" height="33%">
+          <img src="/images/cakes/wedd cake1.jpg" width="20%" height="33%">
+          <img src="/images/cakes/pinkflower.jpg" width="20%" height="33%">
+          <img src="https://images.unsplash.com/photo-1511348398635-8efff213a280?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGluayUyMGNha2VzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" width="20%" height="33%">
+      </div>
+    </div>
+   <div class="page2" id="cupcakes">
+     <img src="/images/Cupcakes/cupcake-rainbow.jpg" style="float:right;" width="45%" height="50vh">
+      <div class="cup-text">
+        <h2> Feel the Butter. All Time.</h2>
+        <h2>The sweetest place in town.</h2>
+        <h2>Take a break, buy a cupcake.</h2>
+      </div>
+      <button class="cupbtn" style=" background: #3333;"  onclick="openCupcakes()"> See More !!</button>
+      <div class="moreCupcakes" style="display: none;" >
+        <img src="/images/Cupcakes/wes-hicks-.jpg" width="30%" height="30%">
+        <img src="/images/Cupcakes/chocolate.jpg" width="30%" height="30%">
+        <img src="/images/Cupcakes/peachmacron.jpg" width="30%" height="30%">
+      </div>
+   </div>
+    <div class="page3" id="coffee&drinks">
+      <div class="right">
+        <p> Discover bliss in every sip!  Escape to a tropical paradise!</p> 
+        <img src="/images/coffee & drinks/straw+ras.jpg" width="30%" height="30%" > 
+        <button class="drinkbtn" onclick="openCoffeeDrinks()"> Click for More!!</button>
+        <p> Sweet moments of life. Making sweet things happen.</p>  
+       <img src="/images/coffee & drinks/cutepanda.jpg" style="margin-right: 10px;" width="30%" height="25%">    
+      </div>   
+
+     <div id="moreImages" style="display: none;">
+        <img src="/images/coffee & drinks/couplecoffee.jpg" width="20%" height="30%">
+        <caption> Love at First Sip. </caption>
+        
+        <img src="/images/coffee & drinks/greenred.jpg" width="20%" height="30%">
+        <caption>Some Coffee.</caption>
+        
+        <img src="/images/coffee & drinks/heart.jpg" width="20%" height="30%">
+        <caption>  Coffee Lovers. </caption>
+        
+        <img src="/images/coffee & drinks/greenjuice.jpg" width="20%" height="30%">
+        <caption> Fruits lose weight. </caption>
+        
+        <img src="/images/coffee & drinks/light coffee.jpg" width="20%" height="30%">
+        <caption>  Coffee Light. </caption>
+
+        <img src="/images/coffee & drinks/mangojuice.jpg" width="20%" height="20%">
+        <caption> Good for the Body.</caption>
+       
+        <img src="/images/coffee & drinks/mocha coffee.jpg" width="20%" height="30%">
+        <caption>  But first Coffee. </caption>
+       
+        <img src="/images/coffee & drinks/blueberry.jpg" width="20%" height="30%">
+        <caption>  Coffee everafter. </caption>
+
+        <img src="/images/coffee & drinks/strawberry.jpg" width="20%" height="30%">
+        <caption>  Stay Healthy. </caption>
+       
+      </div>
+   </div>
+   
+    <div class="page5">
+      <div class="contact">
+        <h3>Get in Touch</h3>
+        <input type="text" placeholder="Name"> <br>
+        <input type="text" placeholder="Email"><br>
+        <input type="text" placeholder="Message" rows="10" cols="30" required><br>
+        <button type="submit" class="sendBtn" onclick="show()"> Send</button>
+      </div>
+    </div>
+    
+    <footer>
+      <img src="/images/giphy.gif" alt="gif" align="left" width="18%" height="30%">
+      <div class="footer-content">
+        <p>&copy; 2023 SweetSpot Bakehouse. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><span class="icon-text has-text-info">
+            <span class="icon"> <i class="fas fa-info-circle"></i></span> <span>Info</span></span></li>
+          <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg></li>
+        </ul>
+      </div>
+    </footer>   
+ </div>
+  <script src="app.js"></script>
+  
+</body>
+</html>
+
+
